@@ -11,3 +11,8 @@
 .panel-title{
     padding: 5px;
 }
+.help-block{
+    color:red;
+    font-style: italic;
+    font-size: small;
+}

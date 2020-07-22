@@ -4,7 +4,7 @@ import {
   NG_VALIDATORS
 } from '@angular/forms'
 import {
-  Directive
+  Directive, Input
 } from '@angular/core';
 
 @Directive({
@@ -16,10 +16,11 @@ import {
   }]
 })
 export class SelectRequiredValidatorDirective implements Validator {
+  @Input('appSelectRequiredValidator') defaultValue:string;
   validate(control: AbstractControl): {
     [key: string]: any
   } | null {
-    return control.value === '-1' ? {
+    return control.value === this.defaultValue ? {
       'defaultSelected': true
     } : null;
   }

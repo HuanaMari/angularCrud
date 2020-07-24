@@ -18,7 +18,9 @@ employees: Employee []=[
     dateOfBirth:new Date("1976-02-5"),
     department:'IT',
     isActive:true,
-    photoPath:'assets/images/1200px-Google_Contacts_icon.svg.png'
+    photoPath:'assets/images/1200px-Google_Contacts_icon.svg.png',
+    password:'',
+    confirmedPassword:''
   },
   {
     id:2,
@@ -30,7 +32,9 @@ employees: Employee []=[
     dateOfBirth:new Date("1988-01-22"),
     department:'IT',
     isActive:true,
-    photoPath:'assets/images/1200px-Google_Contacts_icon.svg.png'
+    photoPath:'assets/images/1200px-Google_Contacts_icon.svg.png',
+    password:'',
+    confirmedPassword:''
   },
   {
     id:3,
@@ -43,7 +47,9 @@ employees: Employee []=[
     dateOfBirth:new Date("1987-12-29"),
     department:'IT',
     isActive:true,
-    photoPath:'assets/images/1200px-Google_Contacts_icon.svg.png'
+    photoPath:'assets/images/1200px-Google_Contacts_icon.svg.png',
+    password:'',
+    confirmedPassword:''
   }
 ]
   constructor() { }

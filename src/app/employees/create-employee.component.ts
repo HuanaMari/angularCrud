@@ -20,7 +20,9 @@ export class CreateEmployeeComponent implements OnInit {
     dateOfBirth:null,
     department:'select',
     isActive:null,
-    photoPath:null
+    photoPath:null,
+    password:null,
+    confirmedPassword:null
   }
   
  previewPhoto=false;

@@ -1,18 +1,31 @@
-.panel-heading{
-    background: blue;
-    color: wheat;
+form {
+  width: 50%;
+  font-family: 'Cinzel', serif;
 }
-.panel{
-    border: 2px solid blue;
-    margin: 10px;
-    border-radius: 10px;
-    padding: 10px;
+
+.panel-heading {
+  color: rgb(0, 105, 167);
+  margin: 2px;
+  text-decoration: underline;
+  padding-bottom: 15px;
 }
-.panel-title{
-    padding: 5px;
+
+.panel {
+  border: 2px solid red !important;
+  margin: 10px;
+  border-radius: 10px;
 }
-.help-block{
-    color:red;
-    font-style: italic;
-    font-size: small;
+
+.help-block {
+  color: red;
+  font-style: italic;
+  font-size: small;
 }
+
+.form-group {
+  padding: 0 20px;
+}
+.form-group > label {
+    font-weight: 600;
+}
+

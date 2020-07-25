@@ -5,5 +5,5 @@
 <div class="container">
 <button (click)="nextEmployee()" type="button" class="btn btn-light">View next Employee</button>
 <br><br>
-<app-display-employee [employee]="employeeToDisplay"></app-display-employee>
+<app-display-employee [employee]="employeeToDisplay" [employeeId]=employeeToDisplay.id></app-display-employee>
 </div>

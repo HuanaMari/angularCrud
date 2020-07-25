@@ -2,7 +2,6 @@ import {
   Component,
   OnInit,
   Input,
-  // OnChanges,
   SimpleChanges
 } from '@angular/core';
 import {
@@ -15,6 +14,19 @@ import {
   styleUrls: ['./display-employee.component.css']
 })
 export class DisplayEmployeeComponent implements OnInit {
+  private _employeeId:number;
+
+  @Input() 
+ set employeeId(val : number) {
+    this._employeeId = val;
+  }
+  
+  get employeeId() : number {
+    return this._employeeId;
+  }
+  
+  
+
   private _employee:Employee;
 
   @Input() 
@@ -25,9 +37,12 @@ export class DisplayEmployeeComponent implements OnInit {
   get employee(){
     return this._employee
   }
+
+ 
   constructor() {}
 
   ngOnInit(): void {}
+  
 
   //   ngOnChanges(changes: SimpleChanges){
   // const previousEmployee=<Employee>changes.employee.previousValue;

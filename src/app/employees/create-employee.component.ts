@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm} from '@angular/forms'
 import {Department} from '../models/department'
 import { Employee } from '../models/employee';
@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
 })
 
 export class CreateEmployeeComponent implements OnInit {
+  @ViewChild('employeeForm') public createEmployeeForm:NgForm;
   employee: Employee = {
     id:null,
     name:null,

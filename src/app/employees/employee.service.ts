@@ -18,7 +18,7 @@ export class EmployeeService {
 
       contactPreference: 'Email',
       dateOfBirth: new Date("1976-02-5"),
-      department: 'IT',
+      department: '3',
       isActive: true,
       photoPath: 'assets/images/1200px-Google_Contacts_icon.svg.png',
       password: '',
@@ -32,7 +32,7 @@ export class EmployeeService {
       phoneNumber: 1234687,
       contactPreference: 'Email',
       dateOfBirth: new Date("1988-01-22"),
-      department: 'IT',
+      department: '2',
       isActive: true,
       photoPath: 'assets/images/1200px-Google_Contacts_icon.svg.png',
       password: '',
@@ -47,7 +47,7 @@ export class EmployeeService {
 
       contactPreference: 'Email',
       dateOfBirth: new Date("1987-12-29"),
-      department: 'IT',
+      department: '3',
       isActive: true,
       photoPath: 'assets/images/1200px-Google_Contacts_icon.svg.png',
       password: '',

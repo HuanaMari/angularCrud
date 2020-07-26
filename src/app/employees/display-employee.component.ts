@@ -1,8 +1,8 @@
 import {
   Component,
   OnInit,
-  Input,
-  SimpleChanges
+  Input
+  // SimpleChanges
 } from '@angular/core';
 import {
   Employee
@@ -14,35 +14,36 @@ import {
   styleUrls: ['./display-employee.component.css']
 })
 export class DisplayEmployeeComponent implements OnInit {
-  private _employeeId:number;
-
-  @Input() 
- set employeeId(val : number) {
-    this._employeeId = val;
-  }
-  
-  get employeeId() : number {
-    return this._employeeId;
-  }
-  
-  
-
-  private _employee:Employee;
-
-  @Input() 
-  set employee(val: Employee){
-    this._employee=val;
-  };
-
-  get employee(){
-    return this._employee
-  }
+  @Input() employee:Employee;
+  // @Output() notify: EventEmitter<Employee>=new EventEmitter<Employee>();
+//   private _employee:Employee;
+//   private _employeeId:number;
+//   @Input() 
+//  set employeeId(val : number) {
+//     this._employeeId = val;
+//   }  
+//   get employeeId() : number {
+//     return this._employeeId;
+//   }
+//   @Input() 
+//   set employee(val: Employee){
+//     this._employee=val;
+//   };
+//   get employee(){
+//     return this._employee
+//   }
 
  
   constructor() {}
 
   ngOnInit(): void {}
-  
+
+  getEmployeeNameAndGender():string{
+    return this.employee.name + " " + this.employee.gender;
+  }
+  // handleClick(){
+  //   this.notify.emit(this.employee)
+  // }
 
   //   ngOnChanges(changes: SimpleChanges){
   // const previousEmployee=<Employee>changes.employee.previousValue;
